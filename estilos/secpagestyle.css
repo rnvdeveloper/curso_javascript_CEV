@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to top, #5eabcc, #066272); /* #4692b3, #6fcdf5)*/
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    text-shadow: 3px 3px 2px black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+img {
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 3px black;
+    margin: 20px;
+    display: inline;
+}
+
+.img_cod {
+    width: 700px;
+    border: 3px solid white;
+    box-shadow: 3px 3px 3px black;
+}
+
+.headercontainer {
+    background-color: #0597aa;
+    border-bottom: 1px solid #000;
+    box-shadow: 0 2px 5px white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#titulo3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo3 h1 {
+    margin-bottom: 0;
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 2px black;
+    margin-bottom: 20px;
+}
+
+.fab {
+    color: #F7DF1E;
+    font-size: 2.5em;
+    margin-right: 20px;;
+    text-shadow: black 3px 3px 2px;
+}
+
+.container {
+    margin: auto;
+    margin-top: 20px;
+    width: 1000px;
+}
+
+a {
+    box-shadow: 4px 4px 3px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    margin: 10px 0px;
+}
+
+a:hover {
+    color: black;
+    background-color: white;
+    transition: .5s;
+}
+
+pre {
+    font-size: 18px;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+
+
+li {
+    margin-left: 30px;
+}
+
+.botao {
+    box-shadow: 3px 3px 3px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 15px 10px 15px;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #0c7af7;
+    color: white;
+    transition: .2s;
+}

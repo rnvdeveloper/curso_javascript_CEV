@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 007</title>
+    <link rel="stylesheet" href="../../estilos/secpagestyle.css">
+    <script src="https://kit.fontawesome.com/d540632743.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <i class="fab fa-js-square"></i>
+                <h1>Exercício 007</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios..html" target="_self" rel="previous">Exercícios</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <p>Nesse exercício deverá ser criada uma função que calcule a média de um aluno de acordo com as notas inseridas
+            nos prompts a serem criados.
+        </p>
+        <button class="botao" id="botao">Clica em mim!</button>
+        <p id="resultado"></p>
+    </div>
+    <script>
+        botao.addEventListener("click", iniciar)
+
+        function iniciar() {
+            let interacao = document.querySelector("#resultado")
+            let nome = prompt("Digite o nome do aluno para avaliar.")
+            let nota1 = Number(prompt("Digita a primeira nota."))
+            let nota2 = Number(prompt("Digite a segunda nota."))
+            let nota3 = Number(prompt("Digite a terceira nota."))
+            let media = ((nota1 + nota2 + nota3) / 3).toFixed(2)
+            interacao.innerHTML = `<p>Calculadas as notas de ${nome} chegamos aos seguintes resultados:</p>`
+            interacao.innerHTML += `<p>As Notas informadas foram ${nota1}, ${nota2} e ${nota3}.</p>`
+            interacao.innerHTML += `<p>A média entre as notas informadas é igual a ${media}.</p>`
+        }
+    </script>
+</body>
+
+</html>

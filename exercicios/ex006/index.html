@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 006</title>
+    <link rel="stylesheet" href="../../estilos/secpagestyle.css">
+    <script src="https://kit.fontawesome.com/d540632743.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <i class="fab fa-js-square"></i>
+                <h1>Exercício 006</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios..html" target="_self" rel="previous">Exercícios</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <p>Este exercício tem como propósito criar uma função que faça a soma de dois números que serão inseridos pelo usuário através de prompts, ou seja, os números serão armazenados em variáveis e reutilizados.
+        </p>
+        <button class="botao" id="botao">Clica aqui, clica!</button>
+        <p id="resultado">É aqui que o resultado vai aparecer!</p>
+    </div>
+
+    <script>
+        botao.addEventListener("click", iniciar)
+
+        function iniciar() {
+            let num1 = Number(prompt("Insira abaixo o primeiro número."))
+            let num2 = Number(prompt("Agora insira o segundo número."))
+            let soma = num1 + num2
+            let interacao = document.getElementById("resultado")
+            interacao.innerHTML = `A soma dos números inseridos, ${num1} e ${num2}, é igual a ${soma}.`
+        }
+    </script>
+</body>
+
+</html>

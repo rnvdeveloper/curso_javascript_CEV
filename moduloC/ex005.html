@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios/exercicios..html" target="_self" rel="next">Exercícios</a> &nbsp;
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Iniciando estudos com o DOM</h1>
+        <p>Aqui vai o reultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+        <div id="msg">Clique em mim</div>
+        <h2>O que é DOM?</h2>
+        <p>DOM é um acrônimo para Document Objetct Model, um conjunto de objetos dentro do seu navegador que dá acesso
+            aos
+            componentes internos do seu website.</p>
+        <p>Ele não funciona no node.js, por exemplo, ele está presente quando o Javascript é rodado dentro do navegador
+        </p>
+        <h2>Exemplo de Árvore DOM</h2>
+        <img src="../imagens/arvore dom.PNG" alt="árvore DOM">
+        <h2>Selecionando e navegando nos elementos com o DOM</h2>
+        <p>Você pode navegar dentro da árvore e atribuir alterações de toda sorte nos elementos utilizando os comandos
+            getElement de acordo com a escolha desejada, mas vale ressaltar que a maneira mais nova é o comando
+            querySelector que pode não funcionar em todos os navegadores. Lembre-se que todas as maneiras são igualmente
+            importantes. </p>
+        <img src="../imagens/selecionandocomdom.PNG" alt="selecionando com dom">
+        <img src="../imagens/querySelector.PNG" alt="querySelector">
+
+        <script>
+            /* var para1 = document.getElementsByTagName("p")[1]
+       document.write('Está escrito assim: ' + para1.innerText)*/
+
+            /* var div = document.getElementById("msg")
+            div.style.background = "white"
+            div.style.color = "black"
+            div.style.width = "300px" */
+
+            var d = document.querySelector("div#msg")
+            d.style.background = "blue"
+            d.style.width = "300px"
+        </script>
+    </div>
+</body>
+
+</html>

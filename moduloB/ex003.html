@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando dados numéricos</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios/exercicios..html" target="_self" rel="next">Exercícios</a> &nbsp;
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Utilizando dados numéricos</h1>
+        <p>O sinal de + pode ser utilizado tanto para concatenação quanto para a adição e nesse caso é necessário
+            identificar quando se trata de um número, pois o JavaScript irá tratar automaticamente os dados inseridos no
+            prompt como uma string, ou seja, a soma de 2+2 será 22 e não 4.</p>
+        <p>Converter um número para string também é possível.</p>
+        <pre>
+        Inserir o comando parseInt ou parse.Float para conversão de string recebida do prompt em número inteiro ou decimal.
+
+            var n1 = Number.parseFloat(window.prompt("Digite o primeiro número"))
+            var n2 = Number.parseFloat(window.prompt("Digite o segundo número"))
+            var s = n1 + n2
+            window.alert("A soma dos valores é " + s)
+
+        Inserir o comando Number (somente) para conversão de string recebida do prompt em número inteiro ou decimal sendo suficiente para que o js identifique sozinho a condição.
+
+            var n1 = Number(window.prompt("Digite o primeiro número"))
+            var n2 = Number(window.prompt("Digite o segundo número"))
+            var s = n1 + n2
+            window.alert("A soma dos valores é " + s)
+    
+        Iserir os comandos abaixo para que o js faça a covnersão de um número para uma String, sendo que há duas maneiras para se fazer isso, veja os exemplos:
+        
+        n.toString()
+        String(n)
+    
+            var n1 = Number(window.prompt("Digite o primeiro número"))
+            var n2 = Number(window.prompt("Digite o segundo número"))
+            var s = n1 + n2
+            window.alert("A soma dos valores é " + String(s))
+    
+            var n1 = Number(window.prompt("Digite o primeiro número"))
+            var n2 = Number(window.prompt("Digite o segundo número"))
+            var s = n1 + n2
+            window.alert("A soma dos valores é " + s.toString())
+</pre>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Patrick+Hand&display=swap');
+@font-face {
+    font-family: 'Lemon Friday';
+    src: url('fontes/Lemon\ Friday.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVEGAÇÃO*/
+
+.headercontainer {
+    background-color: rgb(12, 122, 247);
+    border-bottom: 1px solid #000;
+    box-shadow: 0 2px 5px white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#titulo3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo3 h1 {
+    font-size: 2em;
+}
+
+.fab {
+    color: #F7DF1E;
+    font-size: 2.5em;
+    margin-right: 20px;;
+    text-shadow: black 3px 3px 2px;
+}
+
+nav a {
+    box-shadow: 4px 4px 3px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    margin: 10px 0px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    margin: 10px 0px;
+    padding: 10px 15px 10px 15px;
+    transition: 0.5s;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to top, #4692b3, #6fcdf5);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+main {
+    background-color: rgb(12, 122, 247);
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 5px;
+    box-shadow: white 0 0 10px;
+    margin: auto;
+    padding: 20px 40px 40px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    text-shadow: black 3px 3px 2px;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-shadow: black 3px 3px 2px;
+}
+
+.pMaior {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+.pMaior a {
+    text-decoration: none;
+    color: lightgray
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    padding: 3px 10px;
+    transition: .2s;
+}
+
+ul {
+    color: white;
+    margin-left: 40px;
+}
+

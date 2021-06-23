@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM 1</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+    <style>
+        #area {
+            background-color: green;
+            border-radius: 10px;
+            color: white;
+            font-size: 20pt;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios/exercicios..html" target="_self" rel="next">Exercícios</a> &nbsp;
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Eventos DOM</h1>
+        <h2>Eventos de Mouse</h2>
+        <img src="../imagens/eventosdemouseimg1.PNG" alt="eventos de mouse">
+        <h2>Interação com o bloco</h2>
+        <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+            Interaja
+        </div>
+        <h2>Códigos usados na interação com o bloco acima</h2>
+        <br>
+        <h2>Código usado 1</h2>
+        <p>Importante salientar que nesse caso onde indicamos o eventos e chamamos a função diretamente no HTML, os
+            eventos
+            recebem o nome com o prefixo "on" indicando o movimento e obviamente os eventos estão descritos dentro da
+            tag
+            utilizada como referência</p>
+        <img class="img_cod" src="../imagens/eventosdemouseimg2.PNG" alt="código">
+        <br>
+        <h2>Código usado 2</h2>
+        <p>Neste caso onde usamos o addEventListener, os eventos não são descritos na tag HTML, pois serão "ouvidos"
+            pelo
+            comando addEventListener e nesse caso, ao definir os eventos nas funções, eles não recebem o prefixo "on",
+            mas
+            somente o nome do evento.</p>
+        <img class="img_cod" src="../imagens/eventosdemouseimg3.PNG" alt="código">
+
+        <script>
+            var a = document.getElementById("area")
+
+            function clicar() {
+                a.innerHTML = 'Botão Clicado'
+                a.style.background = "blue"
+            }
+
+            function entrar() {
+                a.innerHTML = "Entrou"
+                a.style.background = "grey"
+                a.style.color = "black"
+            }
+
+            function sair() {
+                a.innerHTML = "Saiu"
+                a.style.background = "black"
+                a.style.color = "white"
+            }
+        </script>
+    </div>
+
+    <!--
+    <div id="area">
+        Interaja
+    </div>
+    <script>
+        var a = window.document.getElementById("area")
+        a.addEventListener("click", clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+            a.innerText = "Botão clicado"
+            a.style.background = "lightgrey"
+        }
+        function entrar() {
+            a.innerText = "Mouse entrou!"
+            a.style.background = "lightblue"
+            a.style.color = "black"
+        }
+        function sair() {
+            a.innerText = "Mouse saiu!"
+            a.style.background = "lightblue"
+            a.style.color = "black"
+        }
+    </script>
+-->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, prompt e confirm</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios/exercicios..html" target="_self" rel="next">Exercícios</a> &nbsp;
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Utilizando Alerts</h1>
+        <p>Aqui o prompt irá solicitar um dado do usuário através do prompt e retornará um alerta com o dado armazenado
+            em
+            uma variável.</p>
+        <pre><code>
+    var nome = window.prompt("Qual o seu nome?")
+    window.alert("É um grande prazer lhe conhecer, " + nome + "!")
+</code></pre>
+        <p>Abaixo alguns comandos que podem ser utilizados para provocar interação com o usuário</p>
+        <pre><code>
+    window.alert("Minha primeira mensagem!") // Exibição de notas na janela incial.
+    window.confirm("Está gostando das aulas?") // Mensagens de confirmação cuja resposta pode ser positiva ou negativa de acordo com a escolha do usuário
+    window.prompt("Qual o seu nome?") // Solicitação de dados do usuário e/ou dados para armazenamento e uso em códigos de cálculos e cadastros, por exemplo.
+    </code></pre>
+    </div>
+    <script>
+        var nome = window.prompt("Qual o seu nome?")
+        window.alert("É um grande prazer lhe conhecer, " + nome + "!")
+    </script>
+</body>
+
+</html>

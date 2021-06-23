@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex010 - Sistema de multas</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios/exercicios..html" target="_self" rel="next">Exercícios</a> &nbsp;
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Condição Simples</h1>
+        <h2>Sistema de multas</h2>
+        Insira a velocidade do carro neste campo
+        <input type="number" name="txtvel" id="txtvel">
+        <input type="button" value="Verificar" onclick="calcular()">
+        <div id="resultado"></div>
+        <h2>Código usado</h2>
+        <p>Veja abaixo, que a seleção dos elementos pode ser feitas pelo id através do comando getElementById ou pelo
+            seletor utilizando o comando querySelector</p>
+        <p>Importante ressaltar que ao utilizar o getElementById você irá indicar entre "" a identificação e ao utilizar
+            o
+            querySelector você deverá indicar o id com #.</p>
+        <img class="img_cod" src="../imagens/sistema de multas.PNG" alt="código">
+
+        <script>
+            /* Função 1 - utilizando getElementById*/
+            function calcular() {
+                var vel_recebida = document.getElementById("txtvel")
+                var vel_convert = Number(vel_recebida.value)
+                var resultado = document.getElementById("resultado")
+                resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${vel_convert} km/h.</strong></p>`
+                if (vel_convert > 50) {
+                    resultado.innerHTML += `<p>Você foi <strong>MULTADO</strong> por excesso de velocidade"`
+                }
+                resultado.innerHTML += "<p> Dirija sempre com cuidado e usando o cinto de segurança.</p>"
+            }
+
+            /* Função 2 - utilizando querySelector*/
+            function calcular() {
+                var vel_recebida = document.querySelector("#txtvel")
+                var vel_convert = Number(vel_recebida.value)
+                var resultado = document.querySelector("#resultado")
+                resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${vel_convert} km/h.</strong></p>`
+                if (vel_convert > 50) {
+                    resultado.innerHTML += `<p>Você foi <strong>MULTADO</strong> por excesso de velocidade"`
+                }
+                resultado.innerHTML += "<p> Dirija sempre com cuidado e usando o cinto de segurança.</p>"
+            }
+        </script>
+    </div>
+
+
+</body>
+
+</html>

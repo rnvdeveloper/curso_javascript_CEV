@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de números e moedas</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios/exercicios..html" target="_self" rel="next">Exercícios</a> &nbsp;
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Formatação de números e moedas</h1>
+        <ul>
+            <li>toFixed() - Esse comando define que aoós a virgula será definido o número de decimais colocados entre
+                parenteses.</li>
+            <li>.replace('.', ',') - Esse comando indica que serão subsitituídos os pontos por vírgulas</li>
+            <li>toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}</li>
+        </ul>
+        <script>
+            var nome = prompt("Digite o seu nome.")
+            var numero1 = Number(prompt("Digite o valor do seu salário."))
+            var numero2 = Number(prompt("Digite o valor recebido de terceiros."))
+            var soma = numero1 + numero2
+            var resultado = document.getElementById("resultado")
+            document.write(
+                `<p>${nome}, a soma da renda recebida é igual a ${soma.toLocaleString('pb-BR', { style: 'currency', currency: 'BRL' })}</p>`
+            )
+        </script>
+        <br>
+        <h2>Código usado</h2>
+        <img class="img_cod" src="../imagens/formataçãodenumeros.PNG" alt="código">
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+    <style>
+        .container {
+            background-color: rgb(44, 73, 97);
+            border: 1px solid white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.253);
+            margin: auto;
+            margin-top: 50px;
+            width: 600px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px black;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px;
+            margin: auto;
+            width: 500px;
+        }
+
+        footer {
+            font-style: italic;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        img {
+            border: none;
+            box-shadow: none;
+        }
+
+        div {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="carregar()">
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios/exercicios..html" target="_self" rel="next">Exercícios</a> &nbsp;
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container" id="container">
+        <header>
+            <h1>Hora do Dia</h1>
+        </header>
+        <section>
+            <div id="msg"></div>
+            <div id="foto">
+                <img id="imagem" src="../imagens/imagemdia.png" alt="imagem">
+            </div>
+        </section>
+        <footer>
+            <p>&copy; CursoemVideo</p>
+        </footer>
+    </div>
+
+    <script src="jsex001.js"></script>
+
+</body>
+
+</html>

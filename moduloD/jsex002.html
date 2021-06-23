@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+    <style>
+        section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px black;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px;
+            margin: auto;
+            width: 500px;
+        }
+
+        footer {
+            font-style: italic;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        img {
+            border: none;
+            box-shadow: none;
+            padding-top: 20px;
+        }
+
+        div {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .semestilo {
+            border: none;
+            box-shadow: none;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios/exercicios..html" target="_self" rel="next">Exercícios</a> &nbsp;
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+
+        <div class="container">
+            <header>
+                <h1>Verificador de Idade</h1>
+            </header>
+            <section>
+                <div>
+                    <p>Ano de Nascimento: <input type="number" name="txtano" id="txtano" min="0"></p>
+                    <p>Sexo: <input type="radio" class="semestilo" name="radsex" id="masc" checked>
+                        <label for="masc">Masculino</label>
+                        <input type="radio" class="semestilo" name="radsex" id="fem" checked>
+                        <label for="masc">Feminino</label></p>
+                    <p><input type="button" value="Verificar" onclick="verificar()"></p>
+                </div>
+                <div id="resultado">Preencha os dados acima para ver o resultado.</div>
+            </section>
+            <footer>
+                <p>&copy; CursoemVideo</p>
+            </footer>
+
+        <script src="jsex002.js"></script>
+    </div>
+</body>
+
+</html>

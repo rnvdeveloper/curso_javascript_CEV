@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando dados com strings</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios/exercicios..html" target="_self" rel="next">Exercícios</a> &nbsp;
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <p>Existe uma maneira mais simples de fazer concatenação de dados (interpolação)</p>
+
+        <p>Exercitando o uso de strings e placeholders, veja abaixo o resultado para a quantidade de letras que tem o
+            nome
+            digitado no prompt.</p>
+        <pre>
+        Veja o código que está rodando para ter o resultado logo abaixo.
+
+        <code>
+            var nome = window.prompt("Qual seu nome?")
+            document.write(`Olá <strong>${nome}</strong>! <br> Sabia que o seu nome tem ${nome.length} letras?<br>`)
+            document.write(`Veja como ele fica em letras maiúsculas: <strong>${nome.toUpperCase()}</strong>`)
+        </code>
+    </pre>
+        <script>
+            var nome = window.prompt("Qual seu nome?")
+            document.write(`Olá <strong>${nome}</strong>! <br> Sabia que o seu nome tem ${nome.length} letras?<br>`)
+            document.write(`Veja como ele fica em letras maiúsculas: <strong>${nome.toUpperCase()}</strong>`)
+        </script>
+    </div>
+</body>
+
+</html>

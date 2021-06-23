@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+    <style>
+        header {
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px black;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px;
+            margin: auto;
+            width: 550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+
+            font-style: italic;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        img {
+            border: none;
+            box-shadow: none;
+        }
+
+        div {
+            padding: 10px;
+        }
+
+        #txtn {
+            height: 20px;
+            width: 60px;
+        }
+
+        #botao {
+            height: 26px;
+            width: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios/exercicios..html" target="_self" rel="next">Exercícios</a> &nbsp;
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+        <div class="container">
+            <header>
+                <h1>Tabuada</h1>
+            </header>
+            <section>
+                <div>
+                    <p>Insira o número da tabuada:
+                        <input type="number" name="num" id="txtn">
+                        <input type="button" value="Gerar Tabuada" id="botao" onclick="tabuada()"></p>
+                </div>
+                <div>
+                    <select name="tabuada" id="selectab" size="10">
+                        <option>Resultado</option>
+                    </select>
+                </div>
+            </section>
+            <footer>
+                <p>&copy; CursoemVideo</p>
+            </footer>
+        </div>
+        
+        <script src="jsex017.js"></script>
+
+</body>
+
+</html>

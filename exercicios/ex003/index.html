@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 003</title>
+    <link rel="stylesheet" href="../../estilos/secpagestyle.css">
+    <script src="https://kit.fontawesome.com/d540632743.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headercontainer">
+
+            <div id="titulo3">
+                <i class="fab fa-js-square"></i>
+                <h1>Exercício 003</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../../notasdocurso.html" target="_self" rel="previous">Notas</a> &nbsp;
+                    <a href="../../desafios/desafios.html" target="_self" rel="next">Desafios</a> &nbsp;
+                    <a href="../exercicios..html" target="_self" rel="previous">Exercícios</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <p>Criar uma função que ao clicar no botão seja criada um "prompt" para inserção de dados e que após a inserção dos dados, seja exibido um "alert" utilizando o dado inserido anteriormente. </p>
+
+        <input type="button" value="Clica aqui please!" class="botao" id="botao" onclick="exibir()">
+    </div>
+
+    <script>
+        function exibir() {
+            let nome = prompt("Insira seu nome no campo abaixo")
+            alert(`Muito prazer ${nome}! Seja bem vindo a este exercício.`)
+        }
+    </script>
+</body>
+
+</html>
