@@ -45,7 +45,7 @@
             let num2 = Number(prompt("Agora insira o segundo número."))
             let soma = num1 + num2
             let interacao = document.getElementById("resultado")
-            interacao.innerHTML = `A soma dos números inseridos, ${num1} e ${num2}, é igual a ${soma}.`
+            interacao.innerHTML = `A soma dos números inseridos, ${num1.toLocaleString("pt-BR")} e ${num2.toLocaleString("pt-BR")} é igual a ${soma.toLocaleString("pt-BR")}.`
         }
     </script>
 </body>

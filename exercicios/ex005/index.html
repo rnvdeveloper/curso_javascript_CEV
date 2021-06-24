@@ -43,10 +43,11 @@
         function iniciar() {
             let num = Number(prompt("Insira um número no campo abaixo."))
             let interação = document.getElementById("resultado")
-            let multiplicar = num * 2
-            let dividir = num / 2
+            let multiplicar = (num * 2).toLocaleString("pt-BR")
+            let dividir = (num / 2).toLocaleString("pt-BR")
+            let numformat = num.toLocaleString("pt-BR")
             interação.innerHTML =
-                `O dobro do número ${num} é igual a ${multiplicar} e a metade desse mesmo número é igual a ${dividir}.`
+                `O dobro do número ${numformat} é igual a ${multiplicar} e a metade desse mesmo número é igual a ${dividir}.`
         }
     </script>
 </body>

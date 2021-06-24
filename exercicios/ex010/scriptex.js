@@ -22,5 +22,5 @@ function iniciar4() {
 }
 
 function zerar () {
-    interacao.innerHTML = ""
+    interacao.innerHTML = null
 }

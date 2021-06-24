@@ -46,10 +46,14 @@
             let nota1 = Number(prompt("Digita a primeira nota."))
             let nota2 = Number(prompt("Digite a segunda nota."))
             let nota3 = Number(prompt("Digite a terceira nota."))
-            let media = ((nota1 + nota2 + nota3) / 3).toFixed(2)
+            let media = (nota1 + nota2 + nota3) / 3
+            let nota1format = nota1.toFixed(2).replace(".", ",")
+            let nota2format = nota2.toFixed(2).replace(".", ",")
+            let nota3format = nota3.toFixed(2).replace(".", ",")
+            let mediaformat = media.toFixed(2).replace(".", ",")
             interacao.innerHTML = `<p>Calculadas as notas de ${nome} chegamos aos seguintes resultados:</p>`
-            interacao.innerHTML += `<p>As Notas informadas foram ${nota1}, ${nota2} e ${nota3}.</p>`
-            interacao.innerHTML += `<p>A média entre as notas informadas é igual a ${media}.</p>`
+            interacao.innerHTML += `<p>As Notas informadas foram ${nota1format}, ${nota2format} e ${nota3format}.</p>`
+            interacao.innerHTML += `<p>A média entre as notas informadas é igual a ${mediaformat}.</p>`
         }
     </script>
 </body>

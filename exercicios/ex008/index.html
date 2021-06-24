@@ -45,17 +45,19 @@
             let absoluto = Math.abs(numero)
             let pInteira = Math.trunc(numero)
             let inteiroProximo = Math.round(numero)
-            let rQuadrada = Math.sqrt(numero).toFixed(2).replace(".", ",")
-            let rCubica = Math.cbrt(numero).toFixed(2).replace(".", ",")
-            let sPotencia = Math.pow(numero, 2).toFixed(2).replace(".", ",")
-            let tPotencia = Math.pow(numero, 3).toFixed(2).replace(".", ",")
+            let rQuadrada = Math.sqrt(numero).toLocaleString("pt-BR")
+            let rCubica = Math.cbrt(numero).toLocaleString("pt-BR")
+            let sPotencia = Math.pow(numero, 2).toLocaleString("pt-BR" )
+            let tPotencia = Math.pow(numero, 3).toLocaleString("pt-BR")
             if (numero < 0) {
-                rQuadrada = Math.sqrt(numero * -1).toFixed(2).replace(".", ",") + "<i>i</i>"
+                rQuadrada = Math.sqrt(numero * -1).toLocaleString("pt-BR") + "<i>i</i>"
+            }
+            if (numero < 0) {
+                rCubica = Math.cbrt(numero * -1).toLocaleString("pt-BR") + "<i>i</i>"
             }
 
-
             interacao.innerHTML = `<p>O número identificado para avaliação é ${numero}</p> <br>`
-            interacao.innerHTML += `<p>O número abosluto de ${numero} é igual a ${absoluto}</p>`
+            interacao.innerHTML += `<p>O número absoluto de ${numero} é igual a ${absoluto}</p>`
             interacao.innerHTML += `<p>A parte inteira do número ${numero} é igual a ${pInteira}</p>`
             interacao.innerHTML +=
                 `<p>A número inteiro mais próximo ao número ${numero} é igual a ${inteiroProximo}</p>`
