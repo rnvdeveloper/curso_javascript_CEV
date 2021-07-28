@@ -13,33 +13,50 @@
     padding: 0;
 }
 
-/* NAVEGAÇÃO*/
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to top, #4692b3, #6fcdf5);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+    justify-content: center;
+}
 
-.headercontainer {
+header {
     background-color: rgb(12, 122, 247);
     border-bottom: 1px solid #000;
     box-shadow: 0 2px 5px white;
-    height: 100px;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+.headerContainer {
+    background-color: rgb(12, 122, 247);
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 70vw;
+    margin: auto;
+    padding: 20px;
 }
 
-#titulo3 {
+#logo {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-#titulo3 h1 {
+#logo h1 {
     font-size: 2em;
 }
 
 .fab {
     color: #F7DF1E;
     font-size: 2.5em;
-    margin-right: 20px;;
+    margin-right: 20px;
     text-shadow: black 3px 3px 2px;
 }
 
@@ -53,6 +70,7 @@ nav a {
     padding: 10px 15px 10px 15px;
     text-decoration: none;
     margin: 10px 0px;
+    line-height: 1em;
 }
 
 nav a:hover {
@@ -64,25 +82,20 @@ nav a:hover {
     transition: 0.5s;
 }
 
-body {
-    background-attachment: fixed;
-    background-image: linear-gradient(to top, #4692b3, #6fcdf5);
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5em;
-    text-align: justify;
+main {
+    margin: 0 auto;
+    max-width: 620px;
 }
 
-main {
+.container {
     background-color: rgb(12, 122, 247);
     border: 1px solid white;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.589) 5px 5px 5px;
     box-shadow: white 0 0 10px;
-    margin: auto;
-    padding: 20px 40px 40px 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 600px;
+    padding: 0px 40px 30px 40px;
+    margin: 20px;
+    max-width: 600px;
 }
 
 h1 {
@@ -101,7 +114,7 @@ h2 {
 
 .pMaior {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
     line-height: 1.5em;
@@ -130,3 +143,30 @@ ul {
     margin-left: 40px;
 }
 
+@media (max-width: 1090px) {
+    #logo h1 {
+        margin-bottom: 20px;
+    }
+    
+    .fab {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .headerContainer {
+        width: 100%;
+    }
+    
+    .container {
+        border-radius: 10px;
+        padding: 0px 20px 30px 25px;
+        margin: 10px;
+        text-align: left;
+    }
+    
+    ul {
+        color: white;
+        margin-left: 20px;
+    }
+}

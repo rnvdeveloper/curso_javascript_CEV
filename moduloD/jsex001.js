@@ -18,15 +18,15 @@ function carregar() {
     }
 
     if (hora >= 0 && hora < 12) {
-        msg.innerHTML = `Agora são ${hora}:${minuto}. Bom dia!`
+        msg.innerHTML = `<p>Agora são ${hora}:${minuto}.</p> <p>Bom dia!</p>`
         img.src = '../imagens/imagemdia.png'
         container.style.background = cor1
     } else if (hora >= 12 && hora < 18) {
-        msg.innerHTML = `Agora são ${hora}:${minuto}. Boa Tarde! `
+        msg.innerHTML = `<p>Agora são ${hora}:${minuto}.</p> <p>Boa Tarde!</p>`
         img.src = '../imagens/imagemtarde.png'
         container.style.background = cor2
     } else {
-        msg.innerHTML = `Agora são ${hora}:${minuto}. Boa Noite!`
+        msg.innerHTML = `<p>Agora são ${hora}:${minuto}.</p> <p>Boa Noite!</p>`
         img.src = '../imagens/imagemnoite.png'
         container.style.background = cor3
     }
