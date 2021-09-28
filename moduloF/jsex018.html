@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuada</title>
+    <title>Analisador de Números</title>
     <link rel="stylesheet" href="../estilos/secpagestyle.css">
     <script src="https://kit.fontawesome.com/d540632743.js" crossorigin="anonymous"></script>
     <style>
@@ -29,6 +29,12 @@
             margin: auto;
             max-width: 500px;
             display: grid;
+            grid-template-rows: .5fr 1fr;
+
+        }
+
+        .bloco1 {
+            display: grid;
             grid-template-columns: 1fr 1fr;
         }
 
@@ -39,9 +45,21 @@
             justify-content: space-around;
         }
 
+        #line2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
         select {
-            width: 90px;
+            width: 200px;
             text-align: center;
+        }
+
+        .resultado p {
+            font-size: 1em;
+            margin: 10px;
         }
 
         footer {
@@ -60,10 +78,12 @@
             width: 80px;
         }
 
-        #botao {
+        .btn {
             height: 26px;
-            width: 110px;
+            width: 100px;
+            margin: 10px;
         }
+
 
         @media (max-width: 600px) {
             input {
@@ -78,6 +98,10 @@
 
             section {
                 padding: 5px;
+                width: 100%;
+            }
+
+            .resultado {
                 width: 100%;
             }
         }
@@ -104,27 +128,42 @@
 
     <div class="container">
 
-        <h1 id="txt">Tabuada</h1>
+        <h1 id="txt">Analisador de Números</h1>
 
         <section>
-            <div id="line1">
-                <p>Insira abaixo o número da tabuada:</p>
-                <input type="number" name="num" id="txtn">
-                <input type="button" value="Gerar Tabuada" id="botao" onclick="tabuada()"></p>
+            <div class="bloco1">
+                <div id="line1">
+                    <p>Insira um número entre 0 e 100:</p>
+                    <input type="text" name="entradanum" id="entradanum">
+                    <input type="button" class="btn" value="Inserir" id="botaoinserir">
+                </div>
+
+                <div id="line2">
+                    <select name="listanumeros" id="listanumeros" size="10">
+                        <option>Resultado</option>
+                        <input type="button" class="btn" value="Gerar" id="gerares">
+                    </select>
+                </div>
             </div>
-            <div id="line2">
-                <select name="tabuada" id="selectab" size="10">
-                    <option>Resultado</option>
-                </select>
+
+            <div class="resultado" id="resultado">
+                <p>Resultado desejado:</p>
+                <p>Validar os campos vazios e só permitir o funcionamento com campos preenchidos.</p>
+                <p>Ao todos temos, X números cadastrados.</p>
+                <p>O maior valor informado é: </p>
+                <p>O menor valor informado é:</p>
+                <p>A soma dos valores informados é: </p>
+                <p>A média dos valores informados é:</p>
             </div>
         </section>
-        
+
         <footer>
             <p>&copy;Curso em Video</p>
         </footer>
+
     </div>
 
-    <script src="jsex017.js"></script>
+    <script src="jsex018.js"></script>
 
 </body>
 

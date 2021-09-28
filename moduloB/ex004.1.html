@@ -48,7 +48,15 @@
         </script>
         <br>
         <h2>Código usado</h2>
-        <img class="img_cod" src="../imagens/formataçãodenumeros.PNG" alt="código">
+
+        <p>var nome = prompt("Digite o seu nome.")</p>
+        <p>var numero1 = Number(prompt("Digite o valor do seu salário."))</p>
+        <p>var numero2 = Number(prompt("Digite o valor recebido de terceiros."))</p>
+        <p>var soma = numero1 + numero2</p>
+        <p>var resultado = document.getElementById("resultado")</p>
+        <p>document.write(`<p>${nome}, a soma da renda recebida é igual a ${soma.toLocaleString('pb-BR', { style: 'currency', currency: 'BRL' })}</p>`
+        )</p>
+
     </div>
 
 

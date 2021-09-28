@@ -1,5 +1,4 @@
 var botao = document.getElementsByClassName("botao")
-var botao = document.getElementsByClassName("botao")
 var interacao = document.querySelector("#resultado")
 var contador = 0 // essa veriável precisa estar fora da função, do contrário o contador não funcionará
 

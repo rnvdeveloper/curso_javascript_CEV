@@ -8,6 +8,17 @@
     <title>Eventos DOM 1</title>
     <link rel="stylesheet" href="../estilos/secpagestyle.css">
     <script src="https://kit.fontawesome.com/d540632743.js" crossorigin="anonymous"></script>
+    <style>
+        #area {
+            display: flex;
+            width: 150px;
+            height: 30px;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,11 +44,13 @@
         <h2>Eventos de Mouse</h2>
         <img src="../imagens/eventosdemouseimg1.PNG" alt="eventos de mouse">
         <h2>Interação com o bloco</h2>
+
         <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
             Interaja
         </div>
+
         <h2>Códigos usados na interação com o bloco acima</h2>
-        <br>
+
         <h2>Código usado 1</h2>
         <p>Importante salientar que nesse caso onde indicamos o eventos e chamamos a função diretamente no HTML, os
             eventos
@@ -45,7 +58,7 @@
             tag
             utilizada como referência</p>
         <img class="img_cod" src="../imagens/eventosdemouseimg2.PNG" alt="código">
-        <br>
+        
         <h2>Código usado 2</h2>
         <p>Neste caso onde usamos o addEventListener, os eventos não são descritos na tag HTML, pois serão "ouvidos"
             pelo

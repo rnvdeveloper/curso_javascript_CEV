@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições - Parte 1</title>
+    <link rel="stylesheet" href="../estilos/secpagestyle.css">
+    <script src="https://kit.fontawesome.com/d540632743.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+
+            <div id="logo">
+                <i class="fab fa-js-square"></i>
+                <h1>Curso JavaScript</h1>
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <a href="../index.html" target="_self" rel="previous">Voltar ao início</a> &nbsp;
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Variáveis Simples</h2>
+        <p>Variáveis que armazenam somente um valor por vez.</p>
+
+        <h2>Variáveis Compostas (Vetor/Array)</h2>
+        <p>Variáveis capazes de armazenar vários valores em uma mesma estrtura. Este é um tipo de variável que contém vários espaços para armazenamento de dados, estes espaços não tem um limite e são definidos a medida em que os valores são inseridos.</p>
+
+        <h2>Exemplos de Arrays</h2>
+        <p>Os arrays são representados da seguinte forma: let numeros = [0,1,2], onde os números dentro dos colchetes, representam os elementos do array, que podem ser compostos por números ou strings.</p>
+        <p>Os itens do array são identificados através de índices que sempre iniciam a partir do 0, conforme estrutura detalhada na imagem abaixo.</p>
+        <p></p>
+        <img src="../imagens/modeloarray.PNG" alt="Modelo de array">
+
+        <h2>Manipulando dados nos arrays</h2>
+        <p>Quando você conhece a extensão do array e deseja inserir um valor, você pode simplesmente informar o nome do array, indicar a posição/índice ainda não existente e o dado que deseja inserir e isso fica assim: num[3} = 6.</p>
+
+        <p>Outra maneira quando não se conhece a extensão do array é utilizando o método 'push', neste caso, o valor será inserido automaticamente na última posição do array e fucniona assim: num.push(7).</p>
+
+        <p>Para identificar a extensão de um array, basta utilizar o atributo length (este não é um método) ele retornará a quantidade de itens do array e fica desta forma: num.length</p>
+
+        <p>Você também pode ordenar os valores de um array utilizando o método 'sort', bastante colocá-lo da seguinte forma: num.sort().</p>
+
+        <p>Você pode identificar a posição/chave de um valor dentro de um array utilizando o método 'indexOf', e para tanto, você irá digitar num.indexOf(valor a ser buscado).</p>
+        <p>Neste caso, o programa irá percorrer os itens do array e buscar pelo valor indicado, caso o valor seja encontrado dentro do array, ele retornará a posição do valor no array, e caso o item não esteja dentro do array, ele retornará o valor '-1' indicando que o item não foi encontrado.</p>
+
+        <img src="../imagens/arrayinsert1.PNG" alt="inserção dados array 1">
+
+        <p>Para percorrer os valores de um array é comum a utilização do laço de repetição 'for', já utilizado em aulas anteriores.</p>
+
+        <p>Veja abaixo uma estrutura mais antiga do for e uma estrutura mais moderna e simplificada de se declarar o for:</p>
+        <img src="../imagens/estruturas_for.PNG" alt="laço de repetição for">
+
+        <h2>Uso de Funções e Eventos</h2>
+        <p>Este tópico já foi ensinado em módulos anteriores, caso tenha dúvidas, revisar o material.</p>
+
+    </div>
+</body>
+
+</html>

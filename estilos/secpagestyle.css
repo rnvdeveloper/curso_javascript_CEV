@@ -55,18 +55,19 @@ header {
 
 h1 {
     color: white;
-    text-shadow: 3px 3px 2px black;
+    text-shadow: 2px 2px 1px black;
     margin-bottom: 20px;
 }
 
 h2 {
-    text-shadow: 3px 3px 2px black;
+    text-shadow: 2px 2px 1px black;
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 20px;;
 }
 
 img {
@@ -83,8 +84,6 @@ img {
     border: 3px solid white;
     box-shadow: 3px 3px 3px black;
 }
-
-
 
 .container {
     padding: 20px 40px 30px 40px;
@@ -108,10 +107,6 @@ a:hover {
     color: black;
     background-color: white;
     transition: .5s;
-}
-
-pre {
-    font-size: 18px;
 }
 
 #resultado {
@@ -138,31 +133,35 @@ ul {
     transition: .2s;
 }
 
-
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .headerContainer {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
     
     .container {
         border-radius: 10px;
-        padding: 20px 20px 30px 25px;
+        padding: 0px 20px 30px 25px;
         margin: 10px;
         text-align: left;
     }
-    
+
+    .container p {
+        text-align: justify;
+    }
+
     ul {
         color: white;
         margin-left: 20px;
     }
 
     #logo h1 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .fab {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     h1 {
@@ -171,5 +170,21 @@ ul {
     
     h2 {
         line-height: 1.5em;
+    }
+}
+
+@media (max-width: 800px) {
+    img {
+        max-width: 90%;
+        border-radius: 10px;
+        border: 2px solid white;
+        box-shadow: 2px 2px 3px black;
+        margin: 10px;
+    }
+    
+    .img_cod {
+        max-width: 90%;
+        border: 3px solid white;
+        box-shadow: 3px 3px 3px black;
     }
 }

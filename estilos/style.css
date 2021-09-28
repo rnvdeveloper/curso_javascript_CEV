@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Patrick+Hand&display=swap');
+
 @font-face {
     font-family: 'Lemon Friday';
     src: url('fontes/Lemon\ Friday.ttf') format('truetype');
@@ -143,30 +144,46 @@ ul {
     margin-left: 40px;
 }
 
-@media (max-width: 1090px) {
-    #logo h1 {
-        margin-bottom: 20px;
+@media (max-width: 1200px) {
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+
     }
-    
+
+    #logo h1 {
+        margin-bottom: 10px;
+    }
+
     .fab {
-        margin-bottom: 20px;
+        margin-bottom: 11px;
     }
 }
 
 @media (max-width: 800px) {
     .headerContainer {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
-    
+
+    #logo h1 {
+        margin-bottom: 10px;
+    }
+
     .container {
         border-radius: 10px;
         padding: 0px 20px 30px 25px;
         margin: 10px;
         text-align: left;
     }
-    
+
     ul {
         color: white;
         margin-left: 20px;
+    }
+
+    .fab {
+        display: none;
     }
 }

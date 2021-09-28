@@ -29,25 +29,29 @@
     </header>
 
     <div class="container">
-        <p>Existe uma maneira mais simples de fazer concatenação de dados (interpolação)</p>
+        <p>Existe uma maneira mais simples de fazer concatenação de dados (interpolação).</p>
 
         <p>Exercitando o uso de strings e placeholders, veja abaixo o resultado para a quantidade de letras que tem o
-            nome
-            digitado no prompt.</p>
-        <pre>
-        Veja o código que está rodando para ter o resultado logo abaixo.
+            nome digitado no prompt.</p>
+            <br>
 
-        <code>
-            var nome = window.prompt("Qual seu nome?")
-            document.write(`Olá <strong>${nome}</strong>! <br> Sabia que o seu nome tem ${nome.length} letras?<br>`)
-            document.write(`Veja como ele fica em letras maiúsculas: <strong>${nome.toUpperCase()}</strong>`)
-        </code>
-    </pre>
-        <script>
-            var nome = window.prompt("Qual seu nome?")
-            document.write(`Olá <strong>${nome}</strong>! <br> Sabia que o seu nome tem ${nome.length} letras?<br>`)
-            document.write(`Veja como ele fica em letras maiúsculas: <strong>${nome.toUpperCase()}</strong>`)
-        </script>
+        <div>
+            <script>
+                var nome = window.prompt("Qual seu nome?")
+                document.write(`Olá <strong>${nome}</strong>! <br> Sabia que o seu nome tem ${nome.length} letras?<br>`)
+                document.write(`Veja como ele fica em letras maiúsculas: <strong>${nome.toUpperCase()}</strong>`)
+            </script>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <p>Veja o código que está rodando para ter o resultado logo abaixo.</p>
+            <br>
+            <p>var nome = window.prompt("Qual seu nome?")</p>
+            <p>document.write(`Olá &lt;strong>${nome}</strong>! &lt;br>Sabia que o seu nome tem ${nome.length} letras?`&lt;br>)
+            </p>
+            <p>document.write(`Veja como ele fica em lreinaldetras maiúsculas: <strong>${nome.toUpperCase()}</strong>`)</p>
+        </div>
+
     </div>
 </body>
 
