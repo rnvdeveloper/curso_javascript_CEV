@@ -1,19 +1,36 @@
-/*
-    ## IMPORTANTE ##
-    Você tem todo o direito de usar esse material 
-    para seu próprio aprendizado. Professores também 
-    podem ter acesso a todo o conteúdo e usá-los com 
-    seus alunos. Porém todos os que usarem esse 
-    material - seja para qual for a finalidade - deverão 
-    manter a referência ao material original, disponível 
-    em https://github.com/gustavoguanabara/javascript. Este 
-    material não poderá ser utilizado em nenhuma hipótese 
-    para ser replicada - integral ou parcialmente - 
-    por autores/editoras/instituições para criar livros 
-    ou apostilas, com finalidades de obter ganho financeiro 
-    com ele.
-*/
+let btnContar = document.getElementById('contar');
+btnContar.addEventListener('click', contar);
+let resultado = document.querySelector('#resultado');
 
+function contar() {
+    let valorInicial = Number(document.getElementById('valorinicial').value);
+    let valorFinal = Number(document.getElementById('valorfinal').value);
+
+    if (valorInicial < valorFinal) {
+        for (let i = valorInicial; i <= valorFinal; i++) {
+            resultado.innerHTML += `> ${[i]} `
+        }
+    }
+
+    if (valorInicial > valorFinal) {
+        for (let i = valorInicial; i >= valorFinal; i--) {
+            resultado.innerHTML += `> ${[i]} `
+        }
+    }
+    resultado.innerHTML += ` \u{1F3C1}`
+}
+
+
+let btnLimpar = document.getElementById('limpar');
+btnLimpar.addEventListener('click', limparTela);
+
+function limparTela() {
+    resultado.innerHTML = null;
+}
+
+
+
+/* SOLUÇÃO DO PROFESSOR
 function contagem() {
     let saida = document.getElementById('saida')
     let n1 = Number(document.getElementById('fn1').value)
@@ -39,3 +56,4 @@ function contagem() {
     
     saida.innerHTML += ` &#x1F3C1;`
 }
+*/

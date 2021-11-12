@@ -1,19 +1,28 @@
-/*
-    ## IMPORTANTE ##
-    Você tem todo o direito de usar esse material 
-    para seu próprio aprendizado. Professores também 
-    podem ter acesso a todo o conteúdo e usá-los com 
-    seus alunos. Porém todos os que usarem esse 
-    material - seja para qual for a finalidade - deverão 
-    manter a referência ao material original, disponível 
-    em https://github.com/gustavoguanabara/javascript. Este 
-    material não poderá ser utilizado em nenhuma hipótese 
-    para ser replicada - integral ou parcialmente - 
-    por autores/editoras/instituições para criar livros 
-    ou apostilas, com finalidades de obter ganho financeiro 
-    com ele.
-*/
+let btnContar = document.getElementById('contar');
+btnContar.addEventListener('click', calcularTab);
+let resultado = document.querySelector('#resultado');
 
+function calcularTab() {
+    let tabuada = Number(document.getElementById('tabuada').value);
+    resultado.innerHTML = `<p>Segue o resultado para a tabuada do ${tabuada}.</p>`
+
+    for (let i = 0; i <= 10; i++) {
+        resultado.innerHTML += `${tabuada} x ${i} = ${tabuada * i}<br> `
+    }
+}
+
+
+let btnLimpar = document.getElementById('limpar');
+btnLimpar.addEventListener('click', limparTela);
+
+function limparTela() {
+    resultado.innerHTML = null;
+}
+
+
+
+
+/* SOLUÇÃO DO PROFESSOR
 function tabuada() {
     let saida = document.getElementById('saida')
     let n = Number(document.getElementById('fnum').value)
@@ -25,3 +34,4 @@ function tabuada() {
         c ++
     }
 }
+*/

@@ -1,18 +1,26 @@
-/*
-    ## IMPORTANTE ##
-    Você tem todo o direito de usar esse material 
-    para seu próprio aprendizado. Professores também 
-    podem ter acesso a todo o conteúdo e usá-los com 
-    seus alunos. Porém todos os que usarem esse 
-    material - seja para qual for a finalidade - deverão 
-    manter a referência ao material original, disponível 
-    em https://github.com/gustavoguanabara/javascript. Este 
-    material não poderá ser utilizado em nenhuma hipótese 
-    para ser replicada - integral ou parcialmente - 
-    por autores/editoras/instituições para criar livros 
-    ou apostilas, com finalidades de obter ganho financeiro 
-    com ele.
-*/
+let btnCalcular = document.getElementById('calcular');
+btnCalcular.addEventListener('click', calcularFatorial);
+let resultado = document.querySelector('#resultado');
+
+function calcularFatorial() {
+    let fatorial = Number(document.getElementById('fatorial').value);
+    let res = fatorial;
+    for (let i = 1; i < fatorial; i++) {
+        resultado.innerHTML = `<p>O resultado para o fatorial de ${fatorial} é igual a ${res *= i}.</p>`
+    }
+}
+
+
+let btnLimpar = document.getElementById('limpar');
+btnLimpar.addEventListener('click', limparTela);
+
+function limparTela() {
+    resultado.innerHTML = null;
+}
+
+
+
+/* SOLUÇÃO DO PROFESSOR
 
 function fatorial() {
     let saida = document.getElementById('saida')
@@ -29,3 +37,4 @@ function fatorial() {
     saida.innerHTML += `1 = <strong>${fat.toLocaleString('pt-BR')}</strong>`
     // Usei o toLocaleString() na linha acima apenas para aparecerem os separadores de milhar/milhões/etc...
 }
+*/

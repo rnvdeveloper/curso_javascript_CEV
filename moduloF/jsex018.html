@@ -12,11 +12,6 @@
         .container {
             padding: 20px 40px 30px 40px;
             margin: 20px;
-            text-align: center;
-        }
-
-        #txt {
-            margin: 10px;
         }
 
         section {
@@ -24,12 +19,28 @@
             border-radius: 10px;
             box-shadow: 3px 3px 3px black;
             color: black;
-            font-weight: bold;
             padding: 5px;
             margin: auto;
             max-width: 500px;
-            display: grid;
-            grid-template-rows: .5fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-shadow: none;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        h3 {
+            text-shadow: none;
+            font-size: 1rem;
 
         }
 
@@ -38,23 +49,30 @@
             grid-template-columns: 1fr 1fr;
         }
 
-        #line1 {
+        .line1, .line2 {
+            align-items: center;
+            border: 1px solid grey;
+            border-radius: 5px;
+            box-shadow: 2px 3px 3px rgba(0, 0, 0, .5);
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+            margin: 10px;
+            padding: 10px;
         }
 
-        #line2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
+        .resultado  {
+            border: 1px solid grey;
+            border-radius: 5px;
+            box-shadow: 2px 3px 3px rgba(0, 0, 0, .5);
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
         }
 
         select {
             width: 200px;
             text-align: center;
+            border: none;
         }
 
         .resultado p {
@@ -67,6 +85,7 @@
             margin: auto;
             font-style: italic;
             margin-top: 20px;
+            text-align: center;
         }
 
         div {
@@ -79,13 +98,16 @@
         }
 
         .btn {
-            height: 26px;
-            width: 100px;
             margin: 10px;
+            padding: 5px 10px;
         }
 
+        @media (max-width: 700px) {
+            .bloco1 {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
 
-        @media (max-width: 600px) {
             input {
                 margin: 10px;
             }
@@ -128,37 +150,30 @@
 
     <div class="container">
 
-        <h1 id="txt">Analisador de Números</h1>
+        <h1>Analisador de Números</h1>
 
         <section>
             <div class="bloco1">
-                <div id="line1">
-                    <p>Insira um número entre 0 e 100:</p>
-                    <input type="text" name="entradanum" id="entradanum">
-                    <input type="button" class="btn" value="Inserir" id="botaoinserir">
+                <div class="line1">
+                    <h2>Insira no campo abaixo um número entre 1 e 100:</h2>
+                    <input type="number" name="entradanum" id="entradanum" required>
+                    <input type="button" class="btn" value="Inserir na tabela" id="btninserir">
                 </div>
 
-                <div id="line2">
-                    <select name="listanumeros" id="listanumeros" size="10">
-                        <option>Resultado</option>
-                        <input type="button" class="btn" value="Gerar" id="gerares">
+                <div class="line2">
+                    <h2>Lista de Números Inseridos:</h2>
+                    <select name="listaentradas" id="listaentradas" size="10">
+
+                        <input type="button" class="btn" value="Gerar resultados" id="btngerarres">
                     </select>
                 </div>
             </div>
 
-            <div class="resultado" id="resultado">
-                <p>Resultado desejado:</p>
-                <p>Validar os campos vazios e só permitir o funcionamento com campos preenchidos.</p>
-                <p>Ao todos temos, X números cadastrados.</p>
-                <p>O maior valor informado é: </p>
-                <p>O menor valor informado é:</p>
-                <p>A soma dos valores informados é: </p>
-                <p>A média dos valores informados é:</p>
-            </div>
+            <div class="resultado" id="resultado">Aqui será apresentado o resultado.</div>
         </section>
 
         <footer>
-            <p>&copy;Curso em Video</p>
+            <p></p>
         </footer>
 
     </div>

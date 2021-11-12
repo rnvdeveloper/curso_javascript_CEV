@@ -133,6 +133,17 @@ ul {
     transition: .2s;
 }
 
+.textinput {
+    box-shadow: 3px 3px 3px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 15px 10px 15px;
+    margin: 20px 0px;
+    font-weight: bold;
+    outline: 0;
+}
+
 @media (max-width: 1000px) {
     .headerContainer {
         display: flex;

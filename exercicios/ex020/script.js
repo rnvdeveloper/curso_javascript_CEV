@@ -1,41 +1,58 @@
-/*
-    ## IMPORTANTE ##
-    Você tem todo o direito de usar esse material 
-    para seu próprio aprendizado. Professores também 
-    podem ter acesso a todo o conteúdo e usá-los com 
-    seus alunos. Porém todos os que usarem esse 
-    material - seja para qual for a finalidade - deverão 
-    manter a referência ao material original, disponível 
-    em https://github.com/gustavoguanabara/javascript. Este 
-    material não poderá ser utilizado em nenhuma hipótese 
-    para ser replicada - integral ou parcialmente - 
-    por autores/editoras/instituições para criar livros 
-    ou apostilas, com finalidades de obter ganho financeiro 
-    com ele.
-*/
+let btnIniciar = document.querySelector('.botao');
+btnIniciar.addEventListener('click', iniciar);
+let resultado = document.getElementById('resultado');
+const meses = ['dezembro', 'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro'];
 
-function estação() { // Sim, é possível usar acentuação
-    let mês = prompt('Digite o mês em extenso (ex: Setembro)')
-    let saída = document.querySelector('section#saida')
-    let estação
-    switch (mês.toUpperCase()) { // O método toUpperCase() transforma todas as letras de uma string para maiúsculas
-        case 'JANEIRO': case 'FEVEREIRO': case 'MARÇO': // Podemos testar múltiplos casos em uma mesma linha, desse jeito
-            estação = 'INVERNO'
-            break // Nunca se esqueça do break!!!
-        case 'ABRIL': case 'MAIO': case 'JUNHO':
-            estação = 'PRIMAVERA'
-            break
-        case 'JULHO': case 'AGOSTO': case 'SETEMBRO':
-            estação = 'VERÃO'
-            break
-        case 'OUTUBRO': case 'NOVEMBRO': case 'DEZEMBRO':
-            estação = 'OUTONO'
-            break
-        default:
-            estação = 'INDEFINIDA'
-            break
+
+function iniciar() {
+    let entradaMes = prompt('Digite no campo abaixo o nome do mês.').toLowerCase();
+    let index = meses.indexOf(entradaMes)
+
+    if (index > -1 && index < 3 || entradaMes == 12 || entradaMes == 1 || entradaMes == 2) {
+        resultado.innerHTML = `No mês indicado, ${entradaMes}, a estação é Verão.`
+    } else if (index > 2 && index < 6 || entradaMes > 2 && entradaMes < 6) {
+        resultado.innerHTML = `No mês indicado, ${entradaMes}, a estação é Outono.`
+    } else if (index > 5 && index < 9 || entradaMes > 5 && entradaMes < 9) {
+        resultado.innerHTML = `No mês indicado, ${entradaMes}, a estação é Inverno.`
+    } else if (index > 8 && index < 12 || entradaMes > 8 && entradaMes < 12) {
+        resultado.innerHTML = `No mês indicado, ${entradaMes}, a estação é Primavera.`
+    } else {
+        resultado.innerHTML = `O mês não foi digitado corretamente, tente novamente.`
     }
-    saída.innerHTML = `<p>No mês de <mark>${mês}</mark>, estamos na estação <mark><strong>${estação}</strong></mark>.</p>`
 }
 
-// Sugestão de melhoria: refaça esse programa para que ele aceite tanto o mês por extenso quanto o número do mês.
+
+/* PROPOSTA INICIAL USANDO SWITCH
+function iniciar() {
+    let entradaMes = prompt('Digite no campo abaixo o nome do mês.').toLowerCase();
+
+    switch (entradaMes) {
+        case 'dezembro':
+        case 'janeiro':
+        case 'fevereiro':
+            resultado.innerHTML = `No mês indicado, ${entradaMes}, a estação é Verão.`
+            break;
+
+        case 'março':
+        case 'abril':
+        case 'maio':
+            resultado.innerHTML = `No mês indicado, ${entradaMes}, a estação é Outono.`
+            break;
+
+        case 'junho':
+        case 'julho':
+        case 'agosto':
+            resultado.innerHTML = `No mês indicado, ${entradaMes}, a estação é Inverno.`
+            break;
+
+        case 'setembro':
+        case 'outubro':
+        case 'novembro':
+            resultado.innerHTML = `No mês indicado, ${entradaMes}, a estação é Primavera.`
+            break;
+
+        default:
+            resultado.innerHTML = `O mês não foi digitado corretamente, tente novamente.`;
+    }
+}
+*/
