@@ -1,4 +1,15 @@
 # curso_javascript_CEV
-Anotações, exercícios e desafios do curso de JavaScript do Curso em Video de Gustavo Guanabara.
-Durante o curso de JavaScritpt eu criei uma página para ajudar na navegação e ter as notas disponíveis online.
-Nos arquivos estão tanto as notas quanto os exercícios e desafios propostos durante o curso.
+Este repositório foi criado com propósito de:
+
+- Manter anotações feitas durante o curso para consultas futuras;
+- Manter histórico de aprendizado;
+- Manter registro dos exercícios e desafios realizados durante o curso;
+- Criar uma página para estudo e prática de HTML e CSS, além de JavaScript.
+- Receber críticas e avaliações de quem se interessar por este conteúdo;
+- Ser útil para quem está no processo de aprendizado e busca por exercícios.
+
+
+
+###  Conclusão
+
+Exercícios e desafios concluídos em 17/11/2021.
