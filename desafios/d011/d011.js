@@ -1,21 +1,12 @@
-let btn = document.querySelector('.botao');
-let saida = document.querySelector('.saida');
-btn.addEventListener('click', verificar);
+let outPut = document.querySelector('.output_here');
 
-function verificar() {
-   let anoInformado = Number(prompt('Digite o ano que deseja verificar'));
+let btn = document.querySelector('.botao').addEventListener('click', () => {
+   let year = Number(prompt('Digite o ano que deseja verificar'));
 
-   let divisivelPor4e100 = anoInformado % 4 === 0 && anoInformado % 100 !== 0 ? true : false;
-   let divisivelPor400e100 = anoInformado % 400 === 0 && anoInformado % 100 === 0 ? true : false;
-   let resultado = divisivelPor4e100 === true || divisivelPor400e100 === true ? true : false;
-   
-   let eBissexto = `<mark><strong>É BISSEXTO</strong></mark>`;
-   let naoBissexto = `<mark><strong>NÃO É BISSEXTO</strong></mark>`;
+   let isLeapYear = (year % 400 === 0 && year % 100 === 0) || (year % 4 === 0 && year % 100 !== 0)
 
-   if (resultado === true) {
-      saida.innerHTML = `O ano de ${anoInformado} ${eBissexto}.`;
+   let isLeapYearMessage = `O ano de ${year} <mark><strong>É BISSEXTO</strong></mark>.`;
+   let notLeapYearMesssage = `O ano de ${year} <mark><strong>NÃO É BISSEXTO</strong></mark>.`;
 
-   } else {
-      saida.innerHTML = `O ano de ${anoInformado} ${naoBissexto}.`;
-   }
-}
+   return isLeapYear ? outPut.innerHTML = `${isLeapYearMessage}` : outPut.innerHTML = `${notLeapYearMesssage}`
+});
